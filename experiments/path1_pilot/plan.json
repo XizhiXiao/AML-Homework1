@@ -1,0 +1,695 @@
+{
+  "version": 1,
+  "profile": "pilot",
+  "parameter_convention": "non_embedding",
+  "reference_config": {
+    "model": {
+      "vocab_size": 16000,
+      "context_length": 1024,
+      "d_model": 1024,
+      "n_layers": 16,
+      "n_heads": 16,
+      "d_ff": 4096,
+      "dropout": 0.0,
+      "tie_weights": true
+    },
+    "train": {
+      "seed": 42,
+      "device": "auto",
+      "precision": "bf16",
+      "micro_batch_size": 4,
+      "gradient_accumulation": 64,
+      "max_steps": 4000,
+      "learning_rate": 0.0004,
+      "min_lr_ratio": 0.1,
+      "warmup_steps": 80,
+      "weight_decay": 0.1,
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "grad_clip": 1.0,
+      "eval_interval": 100,
+      "log_interval": 10,
+      "save_interval": 100,
+      "eval_documents": 128
+    }
+  },
+  "reference_N": 201541632,
+  "reference_D": 1048576000,
+  "reference_C": 1267990309896192000,
+  "runs": [
+    {
+      "id": "n5m_d67108864_s42",
+      "cohort": "fixed_d",
+      "budget": 67108864,
+      "N": 4739072,
+      "N_total": 9097216,
+      "D": 67108864,
+      "C": 1908202430005248,
+      "budget_relative_error": 0,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 256,
+          "n_layers": 6,
+          "n_heads": 4,
+          "d_ff": 1024,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 2048,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 41,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 102,
+          "log_interval": 20,
+          "save_interval": 409,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n5m_d351698944_s42",
+      "cohort": "isoflop",
+      "budget": 1e+16,
+      "N": 4739072,
+      "N_total": 9097216,
+      "D": 351698944,
+      "C": 10000359707639808,
+      "budget_relative_error": 3.59707639808e-05,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 256,
+          "n_layers": 6,
+          "n_heads": 4,
+          "d_ff": 1024,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 10733,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 215,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 536,
+          "log_interval": 107,
+          "save_interval": 2146,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n5m_d1055064064_s42",
+      "cohort": "isoflop",
+      "budget": 3e+16,
+      "N": 4739072,
+      "N_total": 9097216,
+      "D": 1055064064,
+      "C": 30000147383451648,
+      "budget_relative_error": 4.9127817216e-06,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 256,
+          "n_layers": 6,
+          "n_heads": 4,
+          "d_ff": 1024,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 32198,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 644,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 1609,
+          "log_interval": 321,
+          "save_interval": 6439,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n11m_d67108864_s42",
+      "cohort": "fixed_d",
+      "budget": 67108864,
+      "N": 10647552,
+      "N_total": 17184768,
+      "D": 67108864,
+      "C": 4287270714605568,
+      "budget_relative_error": 0,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 384,
+          "n_layers": 6,
+          "n_heads": 6,
+          "d_ff": 1536,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 2048,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 41,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 102,
+          "log_interval": 20,
+          "save_interval": 409,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n11m_d156532736_s42",
+      "cohort": "isoflop",
+      "budget": 1e+16,
+      "N": 10647552,
+      "N_total": 17184768,
+      "D": 156532736,
+      "C": 10000142677573632,
+      "budget_relative_error": 1.42677573632e-05,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 384,
+          "n_layers": 6,
+          "n_heads": 6,
+          "d_ff": 1536,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 4777,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 96,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 238,
+          "log_interval": 47,
+          "save_interval": 955,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n11m_d469598208_s42",
+      "cohort": "isoflop",
+      "budget": 3e+16,
+      "N": 10647552,
+      "N_total": 17184768,
+      "D": 469598208,
+      "C": 30000428032720896,
+      "budget_relative_error": 1.42677573632e-05,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 384,
+          "n_layers": 6,
+          "n_heads": 6,
+          "d_ff": 1536,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 14331,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 287,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 716,
+          "log_interval": 143,
+          "save_interval": 2866,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n25m_d67108864_s42",
+      "cohort": "fixed_d",
+      "budget": 67108864,
+      "N": 25220096,
+      "N_total": 33936384,
+      "D": 67108864,
+      "C": 10154951955185664,
+      "budget_relative_error": 0,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 512,
+          "n_layers": 8,
+          "n_heads": 8,
+          "d_ff": 2048,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 2048,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 41,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 102,
+          "log_interval": 20,
+          "save_interval": 409,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n25m_d66093056_s42",
+      "cohort": "isoflop",
+      "budget": 1e+16,
+      "N": 25220096,
+      "N_total": 33936384,
+      "D": 66093056,
+      "C": 10001239303520256,
+      "budget_relative_error": 0.0001239303520256,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 512,
+          "n_layers": 8,
+          "n_heads": 8,
+          "d_ff": 2048,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 2017,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 40,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 100,
+          "log_interval": 20,
+          "save_interval": 403,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n25m_d198246400_s42",
+      "cohort": "isoflop",
+      "budget": 3e+16,
+      "N": 25220096,
+      "N_total": 33936384,
+      "D": 198246400,
+      "C": 29998759437926400,
+      "budget_relative_error": -4.135206912e-05,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 512,
+          "n_layers": 8,
+          "n_heads": 8,
+          "d_ff": 2048,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 6050,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 121,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 302,
+          "log_interval": 60,
+          "save_interval": 1210,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n50m_d67108864_s42",
+      "cohort": "fixed_d",
+      "budget": 67108864,
+      "N": 50439168,
+      "N_total": 59155456,
+      "D": 67108864,
+      "C": 20309491593510912,
+      "budget_relative_error": 0,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 512,
+          "n_layers": 16,
+          "n_heads": 8,
+          "d_ff": 2048,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 2048,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 41,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 102,
+          "log_interval": 20,
+          "save_interval": 409,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n50m_d33030144_s42",
+      "cohort": "isoflop",
+      "budget": 1e+16,
+      "N": 50439168,
+      "N_total": 59155456,
+      "D": 33030144,
+      "C": 9996077893681152,
+      "budget_relative_error": -0.0003922106318848,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 512,
+          "n_layers": 16,
+          "n_heads": 8,
+          "d_ff": 2048,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 1008,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 20,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 50,
+          "log_interval": 10,
+          "save_interval": 201,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n50m_d99123200_s42",
+      "cohort": "isoflop",
+      "budget": 3e+16,
+      "N": 50439168,
+      "N_total": 59155456,
+      "D": 99123200,
+      "C": 29998150424985600,
+      "budget_relative_error": -6.165250048e-05,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 512,
+          "n_layers": 16,
+          "n_heads": 8,
+          "d_ff": 2048,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 3025,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 60,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 151,
+          "log_interval": 30,
+          "save_interval": 605,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n99m_d67108864_s42",
+      "cohort": "fixed_d",
+      "budget": 67108864,
+      "N": 99231744,
+      "N_total": 112306176,
+      "D": 67108864,
+      "C": 39955977675472896,
+      "budget_relative_error": 0,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 768,
+          "n_layers": 14,
+          "n_heads": 12,
+          "d_ff": 3072,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 2048,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 41,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 102,
+          "log_interval": 20,
+          "save_interval": 409,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n99m_d16809984_s42",
+      "cohort": "isoflop",
+      "budget": 1e+16,
+      "N": 99231744,
+      "N_total": 112306176,
+      "D": 16809984,
+      "C": 10008504173592576,
+      "budget_relative_error": 0.0008504173592576,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 768,
+          "n_layers": 14,
+          "n_heads": 12,
+          "d_ff": 3072,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 513,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 10,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 25,
+          "log_interval": 5,
+          "save_interval": 102,
+          "eval_documents": 128
+        }
+      }
+    },
+    {
+      "id": "n99m_d50397184_s42",
+      "cohort": "isoflop",
+      "budget": 3e+16,
+      "N": 99231744,
+      "N_total": 112306176,
+      "D": 50397184,
+      "C": 30006002766053376,
+      "budget_relative_error": 0.0002000922017792,
+      "config": {
+        "model": {
+          "vocab_size": 16000,
+          "context_length": 1024,
+          "d_model": 768,
+          "n_layers": 14,
+          "n_heads": 12,
+          "d_ff": 3072,
+          "dropout": 0.0,
+          "tie_weights": true
+        },
+        "train": {
+          "seed": 42,
+          "device": "auto",
+          "precision": "bf16",
+          "micro_batch_size": 4,
+          "gradient_accumulation": 8,
+          "max_steps": 1538,
+          "learning_rate": 0.0001414213562373095,
+          "min_lr_ratio": 0.1,
+          "warmup_steps": 31,
+          "weight_decay": 0.1,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "grad_clip": 1.0,
+          "eval_interval": 76,
+          "log_interval": 15,
+          "save_interval": 307,
+          "eval_documents": 128
+        }
+      }
+    }
+  ],
+  "total_C": 276625706169925632,
+  "notes": [
+    "Independent complete cosine schedule for EACH budget.",
+    "Pilot fixed-D curve cannot predict main model at a different D.",
+    "Smaller batch and scaled LR are a starting recipe; tune before interpreting exponents.",
+    "Use final-step validation, not best checkpoint or intermediate cosine checkpoint."
+  ]
+}

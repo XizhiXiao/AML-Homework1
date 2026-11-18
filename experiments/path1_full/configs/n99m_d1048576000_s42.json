@@ -1,0 +1,33 @@
+{
+  "model": {
+    "vocab_size": 16000,
+    "context_length": 1024,
+    "d_model": 768,
+    "n_layers": 14,
+    "n_heads": 12,
+    "d_ff": 3072,
+    "dropout": 0.0,
+    "tie_weights": true
+  },
+  "train": {
+    "seed": 42,
+    "device": "auto",
+    "precision": "bf16",
+    "micro_batch_size": 4,
+    "gradient_accumulation": 8,
+    "max_steps": 32000,
+    "learning_rate": 0.0001414213562373095,
+    "min_lr_ratio": 0.1,
+    "warmup_steps": 640,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "grad_clip": 1.0,
+    "eval_interval": 1600,
+    "log_interval": 320,
+    "save_interval": 6400,
+    "eval_documents": 128
+  }
+}

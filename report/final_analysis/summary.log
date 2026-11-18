@@ -1,0 +1,100 @@
+{
+  "fixed_fit": {
+    "E": 0.8756971973483642,
+    "A": 81.74914964500503,
+    "alpha": 0.3099492677636643,
+    "rmse": 0.0011591849453999861,
+    "jacobian_condition": 54.63501165490804,
+    "bound_hit": false,
+    "n_points": 5
+  },
+  "log_fit": {
+    "E": 0.8778828609736742,
+    "A": 83.47387459097419,
+    "alpha": 0.3115000028736977
+  },
+  "checks": [
+    {
+      "method": "loss least squares",
+      "n_fit": 4,
+      "target_N": 99231744,
+      "predicted": 1.146786238717412,
+      "measured": 1.1474284401829717,
+      "relative_error": 0.0005596875962542943
+    },
+    {
+      "method": "loss least squares",
+      "n_fit": 5,
+      "target_N": 201541632,
+      "predicted": 1.0937448741459428,
+      "measured": 1.116933127353015,
+      "relative_error": 0.020760645950241716
+    },
+    {
+      "method": "log-loss least squares",
+      "n_fit": 4,
+      "target_N": 99231744,
+      "predicted": 1.1472926347611907,
+      "measured": 1.1474284401829717,
+      "relative_error": 0.00011835633232115766
+    },
+    {
+      "method": "log-loss least squares",
+      "n_fit": 5,
+      "target_N": 201541632,
+      "predicted": 1.0940257352875795,
+      "measured": 1.116933127353015,
+      "relative_error": 0.02050918851312341
+    }
+  ],
+  "leave_one_out": [
+    1.096465338463298,
+    1.0956206321588127,
+    1.0923711954873643,
+    1.0934295525714055,
+    1.0928976375387838
+  ],
+  "frontier": [
+    {
+      "budget": 1e+16,
+      "N": 1779840,
+      "D": 936411136,
+      "loss": 1.8080142268643868,
+      "boundary": true
+    },
+    {
+      "budget": 3e+16,
+      "N": 10647552,
+      "D": 469598208,
+      "loss": 1.5545661014881667,
+      "boundary": false
+    },
+    {
+      "budget": 1e+17,
+      "N": 25220096,
+      "D": 660865024,
+      "loss": 1.3540891822916068,
+      "boundary": false
+    }
+  ],
+  "compute_fit": {
+    "E": 0.0,
+    "A": 190.35592284864043,
+    "alpha": 0.12649031052304463,
+    "rmse": 0.009610959773538071,
+    "jacobian_condition": 1.5756625593135019,
+    "bound_hit": false,
+    "n_points": 3
+  },
+  "main": {
+    "loss": 1.116933127353015,
+    "ppl": 3.0554690846079566,
+    "bpb": 0.4203883287408619,
+    "tokens": 4958034,
+    "bytes": 19004680,
+    "checkpoint": "/user-data/aml-g21-xiaoqianzhi-hw1/runs/main/last.pt",
+    "step": 4000,
+    "max_documents": 0,
+    "policy": "Each document starts with EOS context; predict all content tokens plus final EOS. BPB includes EOS NLL, divided by original UTF-8 bytes."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "documents": 631,
+  "utf8_bytes": 500000,
+  "tokens": 149926,
+  "bytes_per_token": 3.3349785894374557,
+  "vocab_size": 1024,
+  "merges": 767,
+  "roundtrip_passed": true
+}
